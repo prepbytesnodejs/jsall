@@ -26,6 +26,54 @@ const data=[
 
 
 
+/// filter --->function --->
+
+// 1- your input is an array 
+// 2- you want the output to be an array 
+// 3- you want the output array's length to be less than or equal to input arrays length
+// 4 - you want to select soeme elements from inoput array
+
+
+const inputArr=[1,2,3,4,5,6,7,8,11,56,78];
+
+
+const outputArr=inputArr.filter(function cb(ele){
+  //console.log(ele);
+ if(ele>=11){  //selecting condition 
+   return ele;
+ }
+  
+});
+
+console.log(outputArr);
+
+//Given an array 
+// ["AB","BC","AD","AK"]  -->input
+//  ["AB","AD","AK"]  ---->output
+
+let text = ["AB","BD","AF","AK"];
+let output = text.filter(function cb(ele){
+
+  if(ele.startsWith("A")){
+    return ele;
+  }
+  
+  
+})
+
+
+let outputwithmap=text.map(function cb(ele){
+
+  if(ele.startsWith("A")){
+    return ele;
+  }
+  
+  
+})
+
+console.log(outputwithmap)
+
+
 
 
 
